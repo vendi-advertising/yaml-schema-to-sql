@@ -12,8 +12,17 @@
     ],
     "require": {
         "php": "^7",
-        "symfony/yaml": "^4.0",
-        "webmozart/path-util": "^2.3"
+        "symfony/yaml": "4.0.3",
+        "webmozart/path-util": "2.3.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "4.0.3",
+        "sensiolabs/security-checker": "4.1.7",
+        "jakub-onderka/PHP-Parallel-Lint": "dev-master",
+        "friendsofphp/php-cs-fixer": "2.10.0"
+    },
+    "config": {
+        "optimize-autoloader": true
     },
     "autoload": {
         "psr-4": {"Vendi\\YamlSchemaToSql\\": "src/"}
