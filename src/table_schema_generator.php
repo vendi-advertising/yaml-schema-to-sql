@@ -1,11 +1,9 @@
 <?php
 
-require_once '../vendor/autoload.php';
+namespace Vendi\YamlSchemaToSql;
 
 use Symfony\Component\Yaml\Yaml;
 use Webmozart\PathUtil\Path;
-
-$path = Path::canonicalize( __DIR__ . '/../config/schema.yaml' );
 
 class table_schema_generator
 {
@@ -238,9 +236,3 @@ class table_schema_generator
         return explode( "\n", rtrim($table->getTable() ) );
     }
 }
-
-
-    $gen = new table_schema_generator( $path );
-    echo '<pre>';
-    echo $gen->get_sql();
-    echo '</pre>';
