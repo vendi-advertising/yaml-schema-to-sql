@@ -1,0 +1,14 @@
+{
+    "name": "vendi-advertising/yaml-schema-to-sql",
+    "authors": [
+        {
+            "name": "cjhaas",
+            "email": "chris@vendiadvertising.com"
+        }
+    ],
+    "require": {
+        "php": "^7",
+        "symfony/yaml": "^4.0",
+        "webmozart/path-util": "^2.3"
+    }
+}
