@@ -1,5 +1,9 @@
 {
     "name": "vendi-advertising/yaml-schema-to-sql",
+    "type": "library",
+    "description": "YAML to MySQL",
+    "homepage": "https://github.com/vendi-advertising/yaml-schema-to-sql",
+    "license": "MIT",
     "authors": [
         {
             "name": "cjhaas",
@@ -10,5 +14,8 @@
         "php": "^7",
         "symfony/yaml": "^4.0",
         "webmozart/path-util": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {"Vendi\\YamlSchemaToSql\\": "src/"}
     }
 }
