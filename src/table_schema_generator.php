@@ -30,12 +30,17 @@ class table_schema_generator
 
     public function get_sql(): string
     {
+        return implode("\n", $this->get_sql_as_array());
+    }
+
+    public function get_sql_as_array(): array
+    {
         $ret = [];
         foreach ($this->tables as $table_name => $table_parts) {
-            $ret[] = $this->get_sql_for_table($table_name, $table_parts);
+            $ret[$table_name] = $this->get_sql_for_table($table_name, $table_parts);
         }
 
-        return implode("\n", $ret);
+        return $ret;
     }
 
     public function get_sql_for_table(string $table_name, array $table_parts): string
